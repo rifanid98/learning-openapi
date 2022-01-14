@@ -41,6 +41,20 @@
       "get": {
         "summary": "Get All TodoList",
         "description": "Get all active todolist by default",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "include_done",
+            "required": false,
+            "description": "Is include done todolist"
+          },
+          {
+            "in": "query",
+            "name": "name",
+            "required": false,
+            "description": "Filter todolist by name"
+          }
+        ],
         "responses": {}
       },
       "post": {
@@ -53,11 +67,27 @@
       "put": {
         "summary": "Update existing todolist",
         "description": "Update existing todolist",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "todoListId",
+            "description": "Todolist id for updated",
+            "required": true
+          }
+        ],
         "responses": {}
       },
       "delete": {
         "summary": "Delete existing todolist",
         "description": "Delete existing todolist",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "todoListId",
+            "description": "Todolist id for deleted",
+            "required": true
+          }
+        ],
         "responses": {}
       }
     }
