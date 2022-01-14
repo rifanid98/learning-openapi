@@ -42,6 +42,11 @@
         "tags": [
           "Todolist"
         ],
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "summary": "Get All TodoList",
         "description": "Get all active todolist by default",
         "parameters": [
@@ -170,6 +175,11 @@
         "tags": [
           "Todolist"
         ],
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "summary": "Create new todolist",
         "description": "Create new todolist",
         "requestBody": {
@@ -250,6 +260,11 @@
       "put": {
         "tags": [
           "Todolist"
+        ],
+        "security": [
+          {
+            "TodolistAuth": []
+          }
         ],
         "summary": "Update existing todolist",
         "description": "Update existing todolist",
@@ -335,6 +350,11 @@
         "tags": [
           "Todolist"
         ],
+        "security": [
+          {
+            "TodolistAuth": []
+          }
+        ],
         "summary": "Delete existing todolist",
         "description": "Delete existing todolist",
         "parameters": [
@@ -394,6 +414,13 @@
     }
   },
   "components": {
+    "securitySchemes": {
+      "TodolistAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      }
+    },
     "parameters": {
       "TodolistId": {
         "in": "path",
