@@ -90,6 +90,15 @@
                     "required": true,
                     "minimum": 1,
                     "example": 1
+                  },
+                  "tags": {
+                    "type": "array",
+                    "required": false,
+                    "items": {
+                      "type": "string",
+                      "minItems": 1,
+                      "example": "daily"
+                    }
                   }
                 }
               }
@@ -135,6 +144,15 @@
                     "required": true,
                     "minimum": 1,
                     "example": 1
+                  },
+                  "tags": {
+                    "type": "array",
+                    "required": false,
+                    "items": {
+                      "type": "string",
+                      "minItems": 1,
+                      "example": "daily"
+                    }
                   }
                 }
               }
