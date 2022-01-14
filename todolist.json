@@ -39,27 +39,27 @@
   "paths": {
     "/todolist": {
       "get": {
-        "responses": {
-
-        }
+        "summary": "Get All TodoList",
+        "description": "Get all active todolist by default",
+        "responses": {}
       },
       "post": {
-        "responses": {
-
-        }
+        "summary": "Create new todolist",
+        "description": "Create new todolist",
+        "responses": {}
       }
     },
     "/todolist/{todoListId}": {
       "put": {
-        "responses": {
-
-        }
+        "summary": "Update existing todolist",
+        "description": "Update existing todolist",
+        "responses": {}
       },
       "delete": {
-        "responses": {
-
-        }
-      },
+        "summary": "Delete existing todolist",
+        "description": "Delete existing todolist",
+        "responses": {}
+      }
     }
   }
 }
