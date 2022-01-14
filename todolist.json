@@ -75,7 +75,24 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": {}
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "required": true,
+                    "minLength": 1,
+                    "example": "Todo 1"
+                  },
+                  "priority": {
+                    "type": "integer",
+                    "format": "int32",
+                    "required": true,
+                    "minimum": 1,
+                    "example": 1
+                  }
+                }
+              }
             }
           }
         },
@@ -103,7 +120,24 @@
           "required": true,
           "content": {
             "application/json": {
-              "schema": {}
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "required": true,
+                    "minLength": 1,
+                    "example": "Todo 1"
+                  },
+                  "priority": {
+                    "type": "integer",
+                    "format": "int32",
+                    "required": true,
+                    "minimum": 1,
+                    "example": 1
+                  }
+                }
+              }
             }
           }
         },
