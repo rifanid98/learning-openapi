@@ -23,7 +23,11 @@
         "environtment": {
           "default": "dev",
           "description": "Server Envirotnment",
-          "enum": ["dev", "qa", "prod"]
+          "enum": [
+            "dev",
+            "qa",
+            "prod"
+          ]
         }
       }
     }
@@ -32,5 +36,30 @@
     "description": "Youtube Programmer Zaman Now",
     "url": "https://www.youtube.com/c/ProgrammerZamanNow"
   },
-  "paths": {}
+  "paths": {
+    "/todolist": {
+      "get": {
+        "responses": {
+
+        }
+      },
+      "post": {
+        "responses": {
+
+        }
+      }
+    },
+    "/todolist/{todoListId}": {
+      "put": {
+        "responses": {
+
+        }
+      },
+      "delete": {
+        "responses": {
+
+        }
+      },
+    }
+  }
 }
